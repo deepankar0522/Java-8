@@ -11,7 +11,7 @@ public class SupplierExample {
 
   public static Supplier<Student> studentSupplier = () -> {
         return new Student(
-            "Adam", 2, 4.0, "male", Arrays.asList("swimming", "basketball", "volleyball"));
+            "Adam", 2, 4.0, "male",5, Arrays.asList("swimming", "basketball", "volleyball"));
       };
 
   public static Supplier<List<Student>> studentsSupplier = () -> StudentDataBase.getAllStudents();

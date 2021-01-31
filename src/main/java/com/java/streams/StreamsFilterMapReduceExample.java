@@ -17,7 +17,7 @@ public class StreamsFilterMapReduceExample {
     private static int noOfNoteBooks(){
 
         int totalNoOfnoteBooks = StudentDataBase.getAllStudents().stream()
-                //.filter(genderPredicte)
+                //.filter(genderPredicate)
                 .filter(gradeLevel)
                 /*  .peek(s->{
                       System.out.println("s : "+ s);
