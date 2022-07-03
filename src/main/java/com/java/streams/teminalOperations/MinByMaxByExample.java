@@ -18,6 +18,12 @@ public class MinByMaxByExample {
         return StudentDataBase.getAllStudents().stream()
                 .collect(Collectors.minBy(Comparator.comparing(student -> student.getGpa())));
     }
+
+    public static Optional<Student> getMinCollectingAndThen(){
+        return StudentDataBase.getAllStudents().stream()
+                .collect(Collectors.minBy(Comparator.comparing(student -> student.getGpa())));
+    }
+
     public static void main(String[] args) {
         System.out.println(getMax());
         System.out.println(getMin());
