@@ -1,4 +1,4 @@
-package com.java.EmployeeManagementSystem;
+package com.java.employeemanagementsystem;
 
 import java.util.*;
 import java.util.stream.Collectors;

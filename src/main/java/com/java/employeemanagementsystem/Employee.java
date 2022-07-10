@@ -1,4 +1,4 @@
-package com.java.EmployeeManagementSystem;
+package com.java.employeemanagementsystem;
 
 class Employee {
     int id;
