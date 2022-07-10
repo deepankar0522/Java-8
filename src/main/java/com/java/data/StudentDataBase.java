@@ -2,6 +2,7 @@ package com.java.data;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Supplier;
 
 public class StudentDataBase {
 
@@ -10,6 +11,8 @@ public class StudentDataBase {
    *
    * @return
    */
+  public static Supplier<Student> studentSupplier = ()->
+          new Student("Adam", 2, 3.6, "male",8, Arrays.asList("swimming", "basketball", "volleyball"));
   public static List<Student> getAllStudents() {
 
     /** 2nd grade students */
